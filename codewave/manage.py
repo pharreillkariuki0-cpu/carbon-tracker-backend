@@ -6,7 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'codewave.settings')
+    #os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'codewave.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'codewave.codewave.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
