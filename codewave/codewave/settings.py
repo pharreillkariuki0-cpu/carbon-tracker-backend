@@ -143,7 +143,10 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://localhost:3000',
-    'https://carbon-tracker-hxcj.vercel.app',  # ← Add your Vercel URL
+    #'https://carbon-tracker-hxcj.vercel.app',  # ← Add your Vercel URL
+    'https://carbon-tracker-3nyr.vercel.app',
+    'https://*.vercel.app',
+
 ]
 
 # Add this line as well (allows all methods)
