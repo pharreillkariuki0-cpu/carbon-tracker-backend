@@ -23,9 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = 'django-insecure-c%mioh1dws9)53w%vo#@uxi1np9^7*u)y8wg7yohp4r^4j^@p='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False #changed it to false
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'carbon-tracker-api-c5li.onrender.com',
+    '.onrender.com',  # Allows any Render domain
+]
 
 
 # Application definition
@@ -135,6 +140,19 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+<<<<<<< HEAD
+=======
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:5173',
+#     'http://localhost:3000',
+#     #'https://carbon-tracker-hxcj.vercel.app',  # ← Add your Vercel URL
+#     'https://carbon-tracker-3nyr.vercel.app',
+#     'https://*.vercel.app',
+
+# ]
+
+# Add this line as well (allows all methods)
+>>>>>>> 24a33d3867241693b3e1ffb338218e1f3cad2ada
 CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
@@ -145,6 +163,11 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+<<<<<<< HEAD
+=======
+#added the two cors
+#CORS_ALLOW_CREDENTIALS = True
+>>>>>>> 24a33d3867241693b3e1ffb338218e1f3cad2ada
 
 CORS_ALLOW_METHODS = [
     'DELETE',
@@ -165,4 +188,8 @@ CORS_ALLOW_HEADERS = [
     'user-agent',
     'x-csrftoken',
     'x-requested-with',
+<<<<<<< HEAD
 ]
+=======
+]
+>>>>>>> 24a33d3867241693b3e1ffb338218e1f3cad2ada
