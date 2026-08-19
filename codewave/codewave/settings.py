@@ -23,14 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = 'django-insecure-c%mioh1dws9)53w%vo#@uxi1np9^7*u)y8wg7yohp4r^4j^@p='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False #changed it to false
+#DEBUG = False #changed it to false
+DEBUG = True #Changed it to true so that i can see why my render backend is crushing
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'carbon-tracker-api-c5li.onrender.com',
-    '.onrender.com',  # Allows any Render domain
-]
+ALLOWED_HOSTS = ['*'] # Allows any Render domain
 
 
 # Application definition
