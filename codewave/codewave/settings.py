@@ -140,8 +140,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-<<<<<<< HEAD
-=======
 # CORS_ALLOWED_ORIGINS = [
 #     'http://localhost:5173',
 #     'http://localhost:3000',
@@ -152,7 +150,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # ]
 
 # Add this line as well (allows all methods)
->>>>>>> 24a33d3867241693b3e1ffb338218e1f3cad2ada
 CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
@@ -163,11 +160,9 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
-<<<<<<< HEAD
-=======
 #added the two cors
 #CORS_ALLOW_CREDENTIALS = True
->>>>>>> 24a33d3867241693b3e1ffb338218e1f3cad2ada
+
 
 CORS_ALLOW_METHODS = [
     'DELETE',
@@ -188,8 +183,5 @@ CORS_ALLOW_HEADERS = [
     'user-agent',
     'x-csrftoken',
     'x-requested-with',
-<<<<<<< HEAD
+
 ]
-=======
-]
->>>>>>> 24a33d3867241693b3e1ffb338218e1f3cad2ada
